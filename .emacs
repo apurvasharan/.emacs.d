@@ -1,3 +1,9 @@
+;; File location on Windows c:/Users/<username>/AppData/Roaming/
+;; Clone .emacs.d from github to c:/Users/<username>/AppData/Roaming
+;; on Windows - create a symbolic link using the below command (on a Admin mode cmd shell)
+;;     cd c:/Users/<username>/AppData/Roaming
+;;     mklink .emacs .emacs.d/.emacs
+
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (let ((default-directory  "~/.emacs.d/elpa/"))
   (normal-top-level-add-subdirs-to-load-path))
